@@ -27,7 +27,7 @@ To request the resource open the URL "http://127.0.0.1:5000/causes" in a web bro
 
 ```
 curl -X GET "http://127.0.0.1:5000/causes"
-``
+```
 
 This command will return a JSON object with a key containing the array of causes stored in the database.
 
