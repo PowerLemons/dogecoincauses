@@ -41,7 +41,7 @@ No modules created for the time being. The folder "settings" contains a file tha
 
 ### Endpoints
 
-* [/causes]() - returns a list of causes stored in MongoDB (no parameters for now)
+* [/causes](http://127.0.0.1:5000/causes) - returns a list of causes stored in MongoDB (no parameters for now)
 
 ### Database
 
