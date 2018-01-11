@@ -49,35 +49,35 @@ Returns a list of causes stored in MongoDB.
 
 * **URL**
 
-/causes
+  /causes
 
 * **Method**
   
-`GET`
+  `GET`
 
 * **URL parameters**
 
-**Required**
+  **Required**
  
-`filter = String [ all | money (from = Numeric, to = Numeric) | cause_id (id = [String]) | country_id (code = [String]) ]`
+  `filter = String [ all | money (from = Numeric, to = Numeric) | cause_id (id = [String]) | country_id (code = [String]) ]`
 
-**Optional**
+  **Optional**
  
-`None`
+  `None`
 
 * **Success response**
   
-* **Code:** 200<br />
-**Content:** `{causes : [{}]}`
+  * **Code:** 200<br />
+    **Content:** `{causes : [{}]}`
  
 * **Error Response:**
 
-* **Code:** 200<br />
-**Content:** `{error: [ wrong_money_filter_params | no_country_codes | no_cause_ids | wrong_filter | no_filter ]}`
+  * **Code:** 200<br />
+    **Content:** `{error: [ wrong_money_filter_params | no_country_codes | no_cause_ids | wrong_filter | no_filter ]}`
 
 * **Sample Call**
 
-/causes?filter=country&code=es&code=nl
+  /causes?filter=country&code=es&code=nl
 
 ### Database
 
