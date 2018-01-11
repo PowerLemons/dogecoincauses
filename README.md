@@ -63,7 +63,7 @@ Returns a list of causes stored in MongoDB.
 
 **Optional**
  
-None
+`None`
 
 * **Success response**
   
