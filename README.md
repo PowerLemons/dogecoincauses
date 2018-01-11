@@ -41,8 +41,7 @@ No modules created for the time being. The folder "settings" contains a file tha
 
 ### Endpoints
 
-** Causes **
-
+**Causes**
 ----
 
 Returns a list of causes stored in MongoDB.
