@@ -70,7 +70,7 @@ Returns a list of causes stored in MongoDB.
   * **Code:** 200<br />
     **Content:** `{causes : [{}]}`
  
-* **Error Response:**
+* **Error response:**
 
   * **Code:** 200<br />
     **Content:** `{error: [ wrong_money_filter_params | no_country_codes | no_cause_ids | wrong_filter | no_filter ]}`
