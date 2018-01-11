@@ -24,9 +24,9 @@ if __name__ == '__main__':
     '''
     Main method
     '''
-    dogecoin_causes = [{'name': 'First cause', 'country': 'Spain', 'description': 'ajkfljskfasf', 'raised_money': 57.12},
-        {'name': 'Second cause', 'country': 'Netherlands', 'description': 'fsdfsferq', 'raised_money': 411.99},
-        {'name': 'Third cause', 'country': 'Colombia', 'description': 'fsdghh', 'raised_money': 34.21},
-        {'name': 'Fourth cause', 'country': 'Belgium', 'description': 'qegsgsgag', 'raised_money': 140.98}]
+    dogecoin_causes = [{'name': 'First cause', 'cause_id': 'c00001', 'country': 'Spain', 'country_3166': 'es', 'description': 'ajkfljskfasf', 'raised_money': 57.12},
+        {'name': 'Second cause', 'cause_id': 'c00002', 'country': 'Netherlands', 'country_3166': 'nl', 'description': 'fsdfsferq', 'raised_money': 411.99},
+        {'name': 'Third cause', 'cause_id': 'c00003', 'country': 'Colombia', 'country_3166': 'co', 'description': 'fsdghh', 'raised_money': 34.21},
+        {'name': 'Fourth cause', 'cause_id': 'c00004', 'country': 'Belgium', 'country_3166': 'be', 'description': 'qegsgsgag', 'raised_money': 140.98}]
 
     load_causes(dogecoin_causes, parser.get('mongo_settings', 'mongo_host'), int(parser.get('mongo_settings', 'mongo_port')), parser.get('mongo_settings', 'mongo_db'), parser.get('mongo_settings', 'mongo_collection'))

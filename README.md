@@ -41,7 +41,43 @@ No modules created for the time being. The folder "settings" contains a file tha
 
 ### Endpoints
 
-* [/causes](http://127.0.0.1:5000/causes) - returns a list of causes stored in MongoDB (no parameters for now)
+** Causes **
+
+----
+
+Returns a list of causes stored in MongoDB.
+
+* **URL**
+
+/causes
+
+* **Method**
+  
+`GET`
+
+* **URL parameters**
+
+**Required**
+ 
+`filter = String [ all | money (from = Numeric, to = Numeric) | cause_id (id = [String]) | country_id (code = [String]) ]`
+
+**Optional**
+ 
+None
+
+* **Success response**
+  
+* **Code:** 200<br />
+**Content:** `{causes : [{}]}`
+ 
+* **Error Response:**
+
+* **Code:** 200<br />
+**Content:** `{error: [ wrong_money_filter_params | no_country_codes | no_cause_ids | wrong_filter | no_filter ]}`
+
+* **Sample Call**
+
+/causes?filter=country&code=es&code=nl
 
 ### Database
 
